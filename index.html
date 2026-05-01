@@ -19,6 +19,37 @@
         justify-content: space-between; /* Pushes the first block left, and the second block right */
         align-items: flex-end;            /* Vertically centers everything nicely */
       }
+      .certificate-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* This is the magic! It creates 2 equal columns (1 fraction each) */
+        gap: 20px;                      /* Creates a nice 20px space between your columns and rows */
+      }
+      .cert-card {
+        border: 1px solid #ccc;         /* Adds a subtle grey border */
+        padding: 15px;                  /* Adds space inside the box so text doesn't touch the edges */
+        border-radius: 8px;             /* Slightly rounds the corners for a modern look */
+      }
+      /* 1. Make the social icons smoothly grow on hover */
+      .social-icons img {
+        transition: transform 0.3s ease; /* This makes the animation smooth! */
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.2); /* This grows the image by 20% */
+        cursor: pointer;       /* Changes the mouse to a pointing hand */
+      }
+
+      /* 2. Polish the text links (like in your certificates) */
+      a {
+        text-decoration: none;         /* Removes the default underline */
+        color: #0A66C2;                /* Uses a professional LinkedIn-style blue */
+        transition: all 0.3s ease;     /* Makes color changes smooth */
+      }
+
+      a:hover {
+        text-decoration: underline;    /* Brings the underline back on hover */
+        color: #004182;                /* Darkens the blue slightly */
+      }
     </style>
   </head>
   <body>
@@ -82,40 +113,49 @@
         </ul>
         <hr>
         <h2>Licenses & certifications</h2>
+        <div class="certificate-grid">
+            <div class="cert-card">
         
-<h3>Ethical Hacking Practice Project & Questions.</h3>
-    <p><a href="https://www.coursera.org/account/accomplishments/verify/VJIMNA9RP51U/">  <img src="learnkarts.png" alt="LearnKarts Logo" style="width:100px;height:100px;">
-</a><strong>LearnKarts</strong> <br> <br>
- Issued Apr 2026 Credential ID VJIMNA9RP51U</p>
+<h3>Technical Support Fundamentals</h3>
+    <p><a href="https://www.coursera.org/account/accomplishments/certificate/PGZ5WY35WFMU"> <img src="google.webp" alt="Google Logo" style="width:100px;height:100px;">
+</a><strong>Google</strong> <br> <br>
+Issued Mar 2026 Credential ID PGZ5WY35WFMU</p>
+ </div>
+    <div class="cert-card">
 
 <h3>Extract, Transform and Load Data in Power BI.</h3>
     <p><a href="https://www.coursera.org/account/accomplishments/certificate/6ID012A078W1"> <img src="microsoft.jpg" alt="power BI Logo" style="width:100px;height:100px;">
 </a><strong>Microsoft</strong> <br> <br>
  Issued Apr 2026 Credential ID 6ID012A078W1</p>
+ </div>
+    <div class="cert-card">
 
   <h3>Product Management</h3>
-    <p><a href="https://www.coursera.org/account/accomplishments/certificate/HNEHW1GRLZKA"> <img src="skillup.webp" alt="power BI Logo" style="width:100px;height:100px;">
-</a><strong>Skillup </strong> <br> <br>
- Issued Apr 2026 Credential ID HNEHW1GRLZKA</p>
+    <p><a href="https://www.coursera.org/account/accomplishments/certificate/YXBQQUPM5GC3"> <img src="ibm.jpg" alt="IBM Logo" style="width:100px;height:100px;">
+</a><strong>IBM</strong> <br> <br>
+Issued Mar 2026 Credential ID YXBQQUPM5GC3</p>
+    </div>
+        <div class="cert-card">
 
-<h3>Technical Support Fundamentals</h3>
-    <p><a href="https://www.coursera.org/account/accomplishments/certificate/PGZ5WY35WFMU"> <img src="google.webp" alt="Google Logo" style="width:100px;height:100px;">
-</a><strong>Google</strong> <br> <br>
-Issued Mar 2026 Credential ID PGZ5WY35WFMU</p> 
+<h3>Ethical Hacking Practice Project & Questions.</h3>
+    <p><a href="https://www.coursera.org/account/accomplishments/verify/VJIMNA9RP51U/">  <img src="learnkarts.png" alt="LearnKarts Logo" style="width:100px;height:100px;">
+</a><strong>LearnKarts</strong> <br> <br>
+ Issued Apr 2026 Credential ID VJIMNA9RP51U</p> 
+</div>
+    <div class="cert-card">
 
 <h3>Preparing Data for Analysis with Microsoft Excel</h3>
     <p><a href="https://www.coursera.org/account/accomplishments/certificate/A3VWQAYUID0W"> <img src="microsoft.jpg" alt="Microsoft Logo" style="width:100px;height:100px;">
 </a><strong>Microsoft</strong> <br> <br>
 Issued Mar 2026 Credential ID A3VWQAYUID0W</p>
+    </div>
+    <div class="cert-card">    
 
 <h3>Product Management</h3>
-    <p><a href="https://www.coursera.org/account/accomplishments/certificate/YXBQQUPM5GC3"> <img src="ibm.jpg" alt="IBM Logo" style="width:100px;height:100px;">
-</a><strong>IBM</strong> <br> <br>
-Issued Mar 2026 Credential ID YXBQQUPM5GC3</p>
-
-<h3>SkillSpardha Tech Week 2026</h3>
-    <p> <img src="SkillSpardha.png" alt="SkillSpardha Logo" style="width:100px;height:100px;">
-</a><strong>SkillSpardha</strong> <br> <br>
-Issued Mar 2026</p>
+    <p><a href="https://www.coursera.org/account/accomplishments/certificate/HNEHW1GRLZKA"> <img src="skillup.webp" alt="power BI Logo" style="width:100px;height:100px;">
+</a><strong>Skillup </strong> <br> <br>
+ Issued Apr 2026 Credential ID HNEHW1GRLZKA</p>
+    </div>
+        </div>
   </body>
 </html>
