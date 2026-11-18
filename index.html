@@ -62,11 +62,29 @@
         .banner {
             width: 100%;
             height: 250px; 
-            background-image: url('cover linkedin.jpg'); /* Fixed URL! */
+            background: linear-gradient(120deg, #0A2540 0%, #13315C 60%, #1D3557 100%);
             background-size: cover;
             background-position: center;
             border-radius: 12px 12px 0 0; 
             margin-bottom: -75px; 
+            display: flex;
+            flex-direction: column;
+            padding: 48px 30px;
+            box-sizing: border-box;
+        }
+
+        .banner-name {
+            color: #FFFFFF;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .banner-tagline {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin: 10px 0 0 0;
         }
 
         /* Update your existing photo style to give it that white border overlap look */
@@ -151,7 +169,10 @@
   </head>
 
   <body>
-    <div class="banner"></div>
+    <div class="banner">
+        <p class="banner-name">Akshay Mishra</p>
+        <p class="banner-tagline">Store Operations &nbsp;|&nbsp; P&amp;L &nbsp;|&nbsp; Team Leadership</p>
+    </div>
 
     <div class="header-container">
         <div class="header-info">
